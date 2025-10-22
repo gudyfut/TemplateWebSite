@@ -16,6 +16,7 @@
 .section-subtitle {
   font-size: 2.1875rem;
   margin-top: 8px;
+
 }
 
 #dishes {
@@ -32,18 +33,13 @@
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 20px;
-  gap: 18px;
+  gap: 12px;
   width: 25%;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-}
-
-.dish img {
-  width: 100%;
-  border-radius: 10px;
 }
 
 .dish-heart {
@@ -61,19 +57,43 @@
   border-radius: 0px 37.5px 0px 42.5px;
 }
 
+.dish img {
+  /* tamanho fixo visual mais compacto; ajuste valores conforme desejar */
+  object-fit: cover; /* mantém o recorte sem distorcer */
+  border-radius: 10px;
+  align-self: center;
+}
+
+.dish-title {
+  height: 2rem;
+  margin: auto;
+}
+
 .dish-description {
   color: #434343;
   text-align: center;
+  /* reserve a fixed vertical space so rating/price don't move */
+  height: 7.5rem; /* adjust this value to fit ~2-3 lines depending on font-size */
+  overflow: hidden;
 }
 
 .dish-rate {
   color: #e9a209;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* ensure rating (and following price) are pinned to the bottom of the card */
+.dish > .dish-rate {
+  margin-top: auto;
 }
 
 .dish-price {
   display: flex;
   align-items: center;
   gap: 20px;
+  height: 2.3rem; /* adjust this value to fit ~2-3 lines depending on font-size */
 }
 
 @media screen and (max-width: 1170px) {
@@ -89,5 +109,11 @@
 
   #menu .section-subtitle {
     text-align: center;
+  }
+
+  .dish img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }

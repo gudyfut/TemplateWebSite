@@ -1,11 +1,10 @@
-import React from 'react';
 import wave from '../assets/images/wave.svg';
 import '../styles/Footer.css';
 
 const Footer = () => {
   return (
     <footer>
-      <img src={wave} alt="Decorativo" />
+  <img id="wave" src={wave} alt="Decorativo" />
       <div id="footer_items">
         <span id="copyright">© 2025 Restaurante Delícia</span>
         <div className="social-media-buttons">

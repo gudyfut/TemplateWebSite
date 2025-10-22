@@ -6,10 +6,10 @@ import dish4 from '../assets/images/dish4.png';
 import '../styles/Menu.css';
 
 const pratos = [
-  { nome: 'Lámem', descricao: 'Saboreie nosso autêntico lámen...', preco: 'R$19,50', img: dish1, estrelas: 5 },
-  { nome: 'BLT', descricao: 'Experimente nosso sanduíche BLT clássico...', preco: 'R$15,99', img: dish2, estrelas: 3 },
-  { nome: 'SmoothieTooth de Kiwi', descricao: 'Feito com kiwis frescos...', preco: 'R$22,59', img: dish3, estrelas: 4 },
-  { nome: 'Lá Mocarrena', descricao: 'Macarrão com camarão grelhado...', preco: 'R$32,19', img: dish4, estrelas: 5 },
+  { nome: 'Lámem', descricao: 'Saboreie nosso autêntico lámen, preparado com caldo rico e profundo, macarrão artesanal e uma seleção de ingredientes frescos. Uma verdadeira delícia que aquece o corpo e a alma!', preco: 'R$19,50', img: dish1, estrelas: 5 },
+  { nome: 'BLT', descricao: 'Experimente nosso sanduíche BLT clássico, feito com bacon crocante, alface fresca e tomate suculento, tudo no pão tostado.', preco: 'R$15,99', img: dish2, estrelas: 3 },
+  { nome: 'SmoothieTooth de Kiwi', descricao: 'Feito com kiwis frescos, banana e um toque de mel, nosso smoothie é a escolha perfeita para um lanche saudável.', preco: 'R$22,59', img: dish3, estrelas: 4 },
+  { nome: 'Lá Mocarrena', descricao: 'Macarrão com camarão grelhado, abobrinha e molho de limão, uma opção leve e saborosa.', preco: 'R$32,19', img: dish4, estrelas: 5 },
 ];
 
 const Menu = () => {

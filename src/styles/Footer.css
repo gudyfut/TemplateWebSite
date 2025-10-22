@@ -1,12 +1,14 @@
 footer {
   background-color: #ffe8b4;
-  padding-top: 40px;
+  /* remove top padding so the wave image can sit flush against the top edge */
+  padding-top: 0;
 }
 
 #footer_items {
   display: flex;
   justify-content: space-between;
-  padding: 0px 8% 24px 8%;
+  /* move the original top spacing from the footer down here so the wave can sit flush */
+  padding: 40px 8% 24px 8%;
   align-items: center;
 }
 
@@ -36,6 +38,27 @@ footer {
 
 .social-media-buttons a:hover {
   box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the decorative wave image has no inline-gap and spans full width */
+footer > img {
+  display: block; /* removes default descender gap for inline images */
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+}
+
+/* keep the visual rotation that was previously in the SVG file */
+footer > img#wave,
+footer > img[id="wave"] {
+  transform: rotate(180deg);
+  transition: 0.3s;
+  display: block;
+}
+
+/* ensure footer doesn't accidentally show transparent area above the wave */
+footer {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1170px) {
