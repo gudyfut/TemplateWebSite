@@ -30,7 +30,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffcb45;
+    background-color: #6784af;
     border-radius: 12px;
     padding: 10px 14px;
     font-weight: 600;
@@ -38,8 +38,9 @@ section{
     cursor:pointer; 
     transition: background-color .3s ease;
 }
-.btn-default:houver{
-    background: color #f8d477;;
+
+.btn-default:hover{
+    background-color: #8dafe0;
 }
 
 .social-media-buttons {
@@ -67,7 +68,7 @@ section{
 }
 
 .section-title{
-    color: #e9a209;
+    color: #6784af;
     font-size: 1.563rem;
 }
 .section-subtitle{

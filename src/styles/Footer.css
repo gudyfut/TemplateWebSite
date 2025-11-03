@@ -1,7 +1,7 @@
 footer {
-  background-color: #ffe8b4;
+  background-color: #6784af;
   /* remove top padding so the wave image can sit flush against the top edge */
-  padding-top: 0;
+  padding-top: 4rem;
 }
 
 #footer_items {

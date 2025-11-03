@@ -9,7 +9,7 @@
 }
 
 .section-title {
-  color: #e9a209;
+  color: #6784af;
   font-size: 1.563rem;
 }
 
@@ -44,7 +44,7 @@
 
 .dish-heart {
   position: absolute;
-  background-color: #e9a209;
+  background-color: #6784af;
   display: flex;
   align-items: center;
   justify-content: center;
